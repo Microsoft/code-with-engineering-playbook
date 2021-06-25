@@ -1,0 +1,16 @@
+# Configuration file for Mega-Linter
+# See all available variables at https://nvuillam.github.io/mega-linter/configuration/ and in linters documentation
+
+APPLY_FIXES: all # all, none, or list of linter keys
+DEFAULT_BRANCH: main
+SHOW_ELAPSED_TIME: true
+FORMATTERS_DISABLE_ERRORS: false    # Display all warnings as errors
+ENABLE:
+  - MARKDOWN
+  # - SPELL Currently 555 errors but would be nice to enable!
+DISABLE_LINTERS:
+  - MARKDOWN_MARKDOWN_TABLE_FORMATTER   # Does not correctly support GFM
+
+# Linter specific settings
+MARKDOWN_MARKDOWNLINT_CONFIG_FILE: .markdownlintrc
+MARKDOWN_MARKDOWN_LINK_CHECK_CONFIG_FILE: .markdownlinkcheck.json
